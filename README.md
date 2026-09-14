@@ -10,10 +10,13 @@ Now run ```chmod +x install.sh && ./install.sh``` to give install.sh permission 
 
 How to run:
 -
+- If you're using a Codespace already
 It doesn't take a genius to realise that to run a python script you use python.
 If you don't have Python3 installed run ```sudo apt update && sudo apt install python3``` then ```python3 main.py```
 If you have Python3 installed run the latter.
 Oh yeah then you click "Ports", find "8080", hover over it, and click the "🌐" ass symbol to open it in a new page.
+- If you're not using a Codespace already
+
 
 How to stop
 -
