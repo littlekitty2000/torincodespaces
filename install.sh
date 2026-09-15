@@ -16,3 +16,16 @@ user_pref("network.proxy.socks_remote_dns", true);
 EOF
 
 echo "Dependencies installed."
+read -p "Set alias? [y/n]: " response
+
+if [[ "$response" =~ ^[Yy]$ ]]; then
+    if ! grep -q 'alias start=' ~/.bashrc; then
+        echo 'alias cstor="python3 main.py"' >> ~/.bashrc
+        echo "cstor made"
+    else
+        echo "And why the FUCK did you make this alias beforehand?"
+    fi
+else
+    echo "Fine then... be that way then..."
+fi
+source ~/.bashrc
