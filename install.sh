@@ -19,7 +19,7 @@ echo "Dependencies installed."
 read -p "Set alias? [y/n]: " response
 
 if [[ "$response" =~ ^[Yy]$ ]]; then
-    if ! grep -q 'alias start=' ~/.bashrc; then
+    if ! grep -q 'alias cstor=' ~/.bashrc; then
         echo 'alias cstor="python3 main.py"' >> ~/.bashrc
         echo "cstor made"
     else
